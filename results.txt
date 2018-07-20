@@ -1,0 +1,27 @@
+ 
+Matrix shape: (12100, 505)
+Classifiying with:
+    LinearSVC(C=1.0, class_weight=None, dual=False, fit_intercept=True,
+     intercept_scaling=1, loss='squared_hinge', max_iter=1000,
+     multi_class='ovr', penalty='l2', random_state=None, tol=0.0001,
+     verbose=0)
+
+
+             precision    recall  f1-score   support
+     Arabic       0.89      0.73      0.80        11
+    Chinese       0.69      0.82      0.75        11
+     French       0.71      0.91      0.80        11
+     German       0.88      0.64      0.74        11
+      Hindi       0.64      0.64      0.64        11
+    Italian       0.91      0.91      0.91        11
+   Japanese       0.54      0.64      0.58        11
+     Korean       0.44      0.36      0.40        11
+    Spanish       0.56      0.45      0.50        11
+     Telugu       0.64      0.64      0.64        11
+    Turkish       0.69      0.82      0.75        11
+avg / total       0.69      0.69      0.68       121
+Accuracy score: 0.6859504132231405
+Micro F1: 0.6859504132231405
+Macro F1: 0.6819994200376975
+ 
+# why this is better than lstm?

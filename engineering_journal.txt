@@ -1,0 +1,28 @@
+Feb 15, 2018:
+Worked on shaping the input. input is a matrix where each row is a sentence and each column is the word embedding of each POS tag in the sentence. For each column in a row less than the longest sentence in the corpus, they are padded with 0-vectors.
+
+Looked at youtube videos trying to understand Keras API.
+
+
+Feb 18, 2018:
+Worked on extracting text from the EFCAMDAT 2 dataset. Using a simple LSTM model is providing much better results than the English Learner Treebank, though it's only around 32%.
+
+
+Feb 19, 2018:
+Worked on structuring input to Neural Network. Input should be a sequence of POS tags to the LSTM network. Had meeting with Xiangliang. Need to work on evaluating additional features. Look at occurences of each feature among all classifications and try predicting using only the additional features.
+
+
+Feb 20, 2018:
+Finished structuring input to Neural Network. Learned how to create jobs on dragon cluster.
+
+
+Feb 21, 2018:
+Trying to troubleshoot code when running on dragon cluster. Implemented a feature metrics to show which labels are getting similar results of addional features. Looks like average word length is not very useful as all labels have nearly the same value.
+
+
+Feb 22 - Mar 9, 2018:
+Been working on the model, switching to Uchenna's method of using char sequences in the LSTM. Also have a proper LSTM network that uses the POS sequences. Char sequence results are the best. Have added features such as rare POS bi-grams and common spelling errors.
+
+
+Mar 11, 2018:
+Focusing on writing Thesis.
